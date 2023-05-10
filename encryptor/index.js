@@ -1,13 +1,22 @@
 console.log('the encryptor js file loaded');
 
-const letters =     'abcdefghijklmnopqrstuvwxyz';
-const encrypt_key = 'bcdefghijklmnopqrstuvwxyza';
+const letters =     'abcdefghijklmnopqrstuvwxyz!?';
+const encrypt_key = 'bcdefghijklmnopqrstuvwxyza?!';
 
-//console.log(letters[0]); // a
-
-for (let i = 0; i < 10; i++) {
-  console.log('loop:' + i);
-{
-for (let i = 0; i < letters.length; i++) {
-    console.log(letters[i]);
-}
+function encrypt(text) {
+let result = '';  
+  
+  for (let i = 0; i < text.lenght; i++) {
+    let letter = text [i];
+    let letterIndex = letters.indexOf(letter);
+    
+    if (lettersIndex < 0) {
+      result += letter;
+    }
+    
+    else{
+      result += encrypt_key[letterIndex];
+   }
+ }
+return result;
+}//encrypt
