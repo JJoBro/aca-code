@@ -24,10 +24,6 @@ return result;
 
 
 
-console.log('the decryptor js file loaded');
-
-const letters =     'abcdefghijklmnopqrstuvwxyz!?';
-const encrypt_key = 'bcdefghijklmnopqrstuvwxyza?!';
 
 function decrypt(text) {
 let result = '';  
