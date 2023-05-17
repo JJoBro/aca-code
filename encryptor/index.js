@@ -52,7 +52,7 @@ e.preventDefault();
   let messageElement = document.getElementById("encrypt");
   let message = messageElement.value;
   let encrypted = encrypt(message);
-  let encodedMessageElmentdocument.getElementById("encrypt-message");
+  let encodedMessageElement = document.getElementById("encrypt-message");
   encodedMessageElement.innerText = encrypted;
 });
                                 ; 
